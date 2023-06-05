@@ -1,0 +1,32 @@
+[
+  {
+    "fecha": "2023-01-01",
+    "nombre": "Año Nuevo",
+    "tipo": "Feriado nacional"
+  },
+  {
+    "fecha": "2023-04-09",
+    "nombre": "Domingo de Resurrección",
+    "tipo": "Feriado religioso"
+  },
+  {
+    "fecha": "2023-06-29",
+    "nombre": "Día de San Pedro y San Pablo",
+    "tipo": "Feriado nacional"
+  },
+  {
+    "fecha": "2023-07-28",
+    "nombre": "Fiestas Patrias",
+    "tipo": "Feriado nacional"
+  },
+  {
+    "fecha": "2023-10-08",
+    "nombre": "Combate de Angamos",
+    "tipo": "Feriado nacional"
+  },
+  {
+    "fecha": "2023-12-25",
+    "nombre": "Navidad",
+    "tipo": "Feriado religioso"
+  }
+]

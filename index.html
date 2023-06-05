@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calendario de Días Feriados en Perú</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .holiday {
+      background-color: #f8d7da;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-4 mb-3">Calendario de Días Feriados en Perú</h1>
+    <div id="calendar" class="row"></div>
+  </div>
+
+  <script>
+    // Obtener los días feriados desde la API
+    fetch('/api/v1/feriados')
+      .then(response => response.json())
+      .then(data => {
+        // Generar el calendario
+        generateCalendar(data);
+      })
+      .catch(error => {
+        console.error('Error al obtener los días feriados:', error);
+      });
+
+    // Función para generar el calendario
+    function generateCalendar(feriados) {
+      const calendar = document.getElementById('calendar');
+
+      // Obtener el año actual
+      const currentYear = new Date().getFullYear();
+
+      // Crear una fecha inicial para el primer día del año
+      const startDate = new Date(currentYear, 0, 1);
+
+      // Crear una fecha final para el último día del año
+      const endDate = new Date(currentYear, 11, 31);
+
+      // Generar los días del año en el calendario
+      for (let date = startDate; date <= endDate; date.setDate(date.getDate() + 1)) {
+        const day = date.getDate();
+        const month = date.getMonth() + 1;
+
+        // Verificar si el día actual es feriado
+        const isHoliday = feriados.some(feriado =>
+          feriado.fecha.slice(5) === `${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`
+        );
+
+        // Crear un elemento para representar el día en el calendario
+        const dayElement = document.createElement('div');
+        dayElement.className = `col-1 text-center p-2 ${isHoliday ? 'holiday' : ''}`;
+        dayElement.innerText = day;
+
+        // Agregar el elemento al calendario
+        calendar.appendChild(dayElement);
+      }
+    }
+  </script>
+</body>
+</html>
