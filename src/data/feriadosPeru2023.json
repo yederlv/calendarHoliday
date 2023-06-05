@@ -1,32 +1,58 @@
-[
-  {
-    "fecha": "2023-01-01",
-    "nombre": "Año Nuevo",
-    "tipo": "Feriado nacional"
-  },
-  {
-    "fecha": "2023-04-09",
-    "nombre": "Domingo de Resurrección",
-    "tipo": "Feriado religioso"
-  },
-  {
-    "fecha": "2023-06-29",
-    "nombre": "Día de San Pedro y San Pablo",
-    "tipo": "Feriado nacional"
-  },
-  {
-    "fecha": "2023-07-28",
-    "nombre": "Fiestas Patrias",
-    "tipo": "Feriado nacional"
-  },
-  {
-    "fecha": "2023-10-08",
-    "nombre": "Combate de Angamos",
-    "tipo": "Feriado nacional"
-  },
-  {
-    "fecha": "2023-12-25",
-    "nombre": "Navidad",
-    "tipo": "Feriado religioso"
-  }
-]
+{
+  "feriados": [
+    {
+      "id": 1,
+      "fecha": "2023-01-01",
+      "nombre": "Año Nuevo",
+      "tipo": "Feriado Nacional"
+    },
+    {
+      "id": 2,
+      "fecha": "2023-04-09",
+      "nombre": "Jueves Santo",
+      "tipo": "Feriado Religioso"
+    },
+    {
+      "id": 3,
+      "fecha": "2023-04-10",
+      "nombre": "Viernes Santo",
+      "tipo": "Feriado Religioso"
+    },
+    {
+      "id": 4,
+      "fecha": "2023-06-29",
+      "nombre": "San Pedro y San Pablo",
+      "tipo": "Feriado Nacional"
+    },
+    {
+      "id": 5,
+      "fecha": "2023-07-28",
+      "nombre": "Fiestas Patrias",
+      "tipo": "Feriado Nacional"
+    },
+    {
+      "id": 6,
+      "fecha": "2023-07-29",
+      "nombre": "Fiestas Patrias",
+      "tipo": "Feriado Nacional"
+    },
+    {
+      "id": 7,
+      "fecha": "2023-10-08",
+      "nombre": "Combate de Angamos",
+      "tipo": "Feriado Nacional"
+    },
+    {
+      "id": 8,
+      "fecha": "2023-12-08",
+      "nombre": "Día de la Inmaculada Concepción",
+      "tipo": "Feriado Nacional"
+    },
+    {
+      "id": 9,
+      "fecha": "2023-12-25",
+      "nombre": "Navidad",
+      "tipo": "Feriado Nacional"
+    }
+  ]
+}
